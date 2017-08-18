@@ -7,7 +7,7 @@ gulp.task('default', function() {
 
 	gulp.src('src/*.js')
 	.pipe(concat('jeeMessages.js'))
-	.pipe(uglify())
+	// .pipe(uglify())
 	.pipe(gulp.dest('lib'));
 
 });
