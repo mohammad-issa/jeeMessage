@@ -2,27 +2,23 @@
   position: absolute;
   right: 0px;
   top: 0px; }
-  .jee .alert-div {
+  .jee .jee-unit {
     font-family: 'Raleway', sans-serif;
     width: 250px;
     padding: 16px;
     margin: 6px;
-    background: #efefef;
     position: absolute;
     right: 0px;
-    border: 1px solid #e64f68;
     background: #ec5c60;
-    color: #fff; }
-    .jee .alert-div .jee-svg {
-      width: 20%;
-      vertical-align: middle;
-      display: inline-block;
-      text-align: center; }
-    .jee .alert-div .jee-text {
+    color: #fff;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3); }
+    .jee .jee-unit .jee-message {
       vertical-align: middle;
       display: inline-block;
       line-height: 1; }
-      .jee .alert-div .jee-text .jee-title {
+      .jee .jee-unit .jee-message .jee-title {
         color: #fff;
         font-weight: bolder;
         text-transform: uppercase;
@@ -30,6 +26,6 @@
         padding-bottom: 9px;
         letter-spacing: 2px;
         font-size: 14px; }
-      .jee .alert-div .jee-text .jee-message {
+      .jee .jee-unit .jee-message .jee-msg {
         font-size: 12px;
         display: inline-block; }
