@@ -20,3 +20,15 @@ jeeMessages.jeeAdd (' type ' , ' title ' , ' message ')
 ```javascript
 jeeMessages.jeeAdd('success','great!','your invitation has been sent successfully');
 ```
+___
+
+### Options
+* top: (number) start top position
+* messageDuration: (millisecond) time duration for message
+* fadeOut : (boolean) fade effect when time ended
+
+```javascript
+jeeMessages.msgOption({
+	
+});
+```

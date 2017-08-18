@@ -14,7 +14,6 @@ var jee_messages = function() {
 jee_messages.prototype = {
 
     msgOption: function(obj) {
-        this.option.color = obj.color !== undefined ? obj.color : this.option.color;
         this.option.messageDuration = obj.messageDuration !== undefined ? obj.messageDuration : this.option.messageDuration;
         this.option.fadeOut = obj.fadeOut !== undefined ? obj.fadeOut : this.option.fadeOut;
         this.option.top = obj.top !== undefined ? obj.top : this.option.top;
