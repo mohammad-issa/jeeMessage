@@ -28,7 +28,9 @@ ___
 * fadeOut : (boolean) fade effect when time ended
 
 ```javascript
-jeeMessages.msgOption({
-	
+jeeMessages.msgOsption({
+	top:94,
+	messageDuration:2250,
+	fadeOut:true,
 });
 ```
