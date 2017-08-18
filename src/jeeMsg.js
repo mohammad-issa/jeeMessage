@@ -34,7 +34,7 @@ jee_messages.prototype = {
         document.body.appendChild(main_div);
     },
 
-    addMsg: function(type,title,msg) {
+    jeeAdd: function(type,title,msg) {
         var jee_div = document.createElement("div");
         jee_div.className = 'jee-unit';
         document.getElementsByClassName('jee')[0].appendChild(jee_div);
