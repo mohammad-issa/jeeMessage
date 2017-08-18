@@ -34,13 +34,37 @@ jee_messages.prototype = {
         document.body.appendChild(main_div);
     },
 
-    addMsg: function(msg) {
+    addMsg: function(type,title,msg) {
         var jee_div = document.createElement("div");
         jee_div.className = 'jee-unit';
         document.getElementsByClassName('jee')[0].appendChild(jee_div);
 
         var length = this.jee_unit.length;
-        this.jee_unit[length - 1].innerHTML = this.components.success(msg);
+        switch (type) {
+
+		    case 'error':
+        		this.jee_unit[length - 1].className += " jee-error";
+		        break;
+
+		    case 'success':
+        		this.jee_unit[length - 1].className += " jee-success";
+		        break;
+
+		    case 'info':
+        		this.jee_unit[length - 1].className += " jee-info";
+		        break;
+
+		    case 'warning':
+        		this.jee_unit[length - 1].className += " jee-warning";
+		        break;
+
+            default: 
+        		this.jee_unit[length - 1].className += " jee-default";
+        		console.warn('JeeMessages : please select type of message');
+		}
+
+		this.jee_unit[length - 1].innerHTML = this.components.con_unit(title,msg);
+
         var element_heigth = this.computeHeigth('jee-unit', length - 1);
         var total_heigth =0;
         for (var i = 0; i < this.jee_unit.length; i++) {

@@ -2,15 +2,15 @@ $(document).ready(function(){
 
 	jeeMessages.msgOption({
         top: 0,
-        messageDuration:2000,
+        messageDuration:1000,
         fadeOut:true,
 	});
 
 	$('#success').click(function (argument) {
-		jeeMessages.addMsg('is simply dummy text of the printing');
+		jeeMessages.addMsg('warning','Lorem Ipsum is simply dummy text of the printing','typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum');
 	});
 	$('#success2').click(function (argument) {
-		jeeMessages.addMsg('is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknow');
+		jeeMessages.addMsg();
 	});
 
 
