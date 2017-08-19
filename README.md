@@ -30,7 +30,7 @@ ___
 ```javascript
 jeeMessages.msgOption({
 	top:94,
-	messageDuration:2250,
+	messageDuration:3000,
 	fadeOut:true,
 });
 ```
