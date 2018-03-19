@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	jeeMessages.msgOption({
-		top:94,
+		top:10,
 		messageDuration:2250,
 		fadeOut:true,
 	});
